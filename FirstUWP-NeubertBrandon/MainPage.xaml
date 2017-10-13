@@ -7,7 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="32">
+        <Slider x:Name="QuantityInput" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" Margin="600,415,0,0" FontSize="48" Height="44" Maximum="10" TickFrequency="1" LargeChange="1"/>
+        <TextBox x:Name="WidthInput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="600,100,0,0" FontSize="48" Width="183" KeyUp="WidthInput_KeyUpAsync"/>
+        <TextBox x:Name="HeightInput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="600,200,0,0" FontSize="48" Width="183" KeyUp="HeightInput_KeyUpAsync"/>
+        <ComboBox x:Name="ColorInput" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" Margin="600,310,0,0" FontSize="40"/>
+        <Button x:Name="Engage" Content="Go!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,500,0,0" FontSize="48" Click="Button_ClickAsync" Width="183"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,100,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" FontSize="48" IsReadOnly="True" Width="341"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,200,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" FontSize="48" IsReadOnly="True" Width="341"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,300,0,0" TextWrapping="Wrap" Text="Color Selection" VerticalAlignment="Top" FontSize="48" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,400,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" FontSize="48" IsReadOnly="True" Width="341"/>
 
     </Grid>
 </Page>
